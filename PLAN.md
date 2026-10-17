@@ -17,7 +17,8 @@ Give a dentist or clinic a quick, credible introduction to Mikołaj Kozak's dent
 2. Hero with clear positioning and illustrative dental ceramic image.
 3. Three craft priorities: form, colour, finish.
 4. Work section with selected real photographs and links to their original Instagram posts, without inventing case studies.
-5. Short collaboration invitation and contact section.
+5. “Z pracowni” journal section and one linkable editorial article draft, with sources and a clear review label.
+6. Short collaboration invitation and contact section.
 
 ## Content still needed from Mikołaj before publishing
 
@@ -26,6 +27,7 @@ Give a dentist or clinic a quick, credible introduction to Mikołaj Kozak's dent
 - Service area and practical ordering process.
 - The three selected photographs from Mikołaj's public Instagram posts were added at the user's request and link to their source posts. Obtain approval for any additional photographs and consent before using patient imagery.
 - Domain ownership and whether `kozaklab.pl` should be restored.
+- Mikołaj's review, edits, and approval of the example journal article before public launch; his real process and any future case details should come from him.
 
 ## Local verification
 
