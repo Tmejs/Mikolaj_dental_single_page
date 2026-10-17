@@ -98,10 +98,16 @@ h2 em { font-weight: 400; color: var(--accent); }
 .button-outline:hover { color: white; background: var(--ink); }
 .work-source { margin: 34px 0 0; color: #84847c; font-size: 11px; letter-spacing: .04em; }
 .work-source strong { color: var(--ink); font-weight: 700; }
-.work-visual { position: relative; min-height: 600px; background: #dfd6c9; overflow: hidden; }
-.work-image { position: absolute; inset: 0; background: url('assets/ceramic-craft.jpg') center center / cover no-repeat; transform: scale(1.02); }
-.work-caption { position: absolute; left: 0; right: 0; bottom: 0; display: flex; justify-content: space-between; gap: 15px; padding: 18px 24px; background: rgba(245,242,236,.9); backdrop-filter: blur(8px); font-size: 10px; font-weight: 700; letter-spacing: .11em; }
-.work-photo-note { position: absolute; right: 18px; top: 18px; padding: 8px 10px; background: rgba(245,242,236,.87); font-size: 9px; text-transform: uppercase; letter-spacing: .09em; }
+.work-card { display: block; min-width: 0; border: 1px solid var(--line); background: #151515; transition: border-color .2s, transform .2s; }
+.work-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+.work-card img { display: block; width: 100%; height: auto; }
+.work-card-caption { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 88px; padding: 18px 23px; background: var(--paper); }
+.work-card-caption > span:first-child { display: flex; flex-direction: column; gap: 5px; }
+.work-card-caption small { color: #646962; font-size: 10px; font-weight: 700; letter-spacing: .12em; }
+.work-card-caption strong { color: var(--ink); font-family: var(--serif); font-size: 24px; font-weight: 400; letter-spacing: -.035em; }
+.work-card-arrow { align-self: center; color: var(--ink); font-size: 22px; transition: transform .2s; }
+.work-card:hover .work-card-arrow { transform: translate(3px,-3px); }
+.work-gallery { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 26px; margin-top: 64px; }
 
 .contact-section { background: var(--ink); color: var(--paper); padding-block: 113px 130px; }
 .contact-inner { display: grid; grid-template-columns: 1fr 2.8fr; gap: 32px; }
@@ -126,7 +132,6 @@ h2 em { font-weight: 400; color: var(--accent); }
   .intro-grid { grid-template-columns: 1fr 2.4fr; }
   .intro-aside { display: none; }
   .work-layout { gap: 50px; }
-  .work-visual { min-height: 510px; }
   .principle { padding-right: 24px; }
   .principle + .principle { padding-left: 24px; }
 }
@@ -165,7 +170,9 @@ h2 em { font-weight: 400; color: var(--accent); }
   .principle p { max-width: 450px; }
   .work-copy h2 { margin-top: 0; }
   .work-source { margin-bottom: 35px; }
-  .work-visual { min-height: 470px; }
+  .work-gallery { grid-template-columns: 1fr; gap: 24px; margin-top: 28px; }
+  .work-card-caption { min-height: 80px; padding-inline: 18px; }
+  .work-card-caption strong { font-size: 21px; }
   .contact-section { padding-block: 82px 95px; }
   .contact-link { gap: 28px; font-size: 21px; }
   .footer-inner { min-height: 118px; flex-wrap: wrap; justify-content: space-between; padding-block: 25px; }
@@ -178,7 +185,7 @@ h2 em { font-weight: 400; color: var(--accent); }
   .hero { min-height: 760px; }
   h1 { font-size: 55px; }
   .hero-actions { align-items: flex-start; flex-direction: column; }
-  .work-visual { min-height: 385px; }
+  .work-card-caption strong { font-size: 19px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
