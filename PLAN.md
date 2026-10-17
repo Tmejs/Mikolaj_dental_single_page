@@ -8,7 +8,7 @@ Give a dentist or clinic a quick, credible introduction to Mikołaj Kozak's dent
 
 - Language: Polish, matching the Instagram profile.
 - Visual style: editorial, precise, warm ivory and graphite with a muted copper accent.
-- Use a generated studio image to establish mood; label it as illustrative. Link to Instagram for actual work.
+- Use a generated studio image to establish mood; label it as illustrative. Show selected real work photographs from Mikołaj's public Instagram posts, each linked to its original post.
 - Keep the page static and responsive so it can be previewed locally and edited without a build tool.
 
 ## Page flow
@@ -16,7 +16,7 @@ Give a dentist or clinic a quick, credible introduction to Mikołaj Kozak's dent
 1. Header with brand, section links, and Instagram contact action.
 2. Hero with clear positioning and illustrative dental ceramic image.
 3. Three craft priorities: form, colour, finish.
-4. Work section that directs visitors to the real Instagram portfolio without inventing case studies.
+4. Work section with selected real photographs and links to their original Instagram posts, without inventing case studies.
 5. Short collaboration invitation and contact section.
 
 ## Content still needed from Mikołaj before publishing
@@ -24,7 +24,7 @@ Give a dentist or clinic a quick, credible introduction to Mikołaj Kozak's dent
 - Exact product and service list, materials, and any specialties.
 - Preferred contact method and business email or phone, if desired.
 - Service area and practical ordering process.
-- Approved photographs of actual work and any permissions needed for patient imagery.
+- Confirm permission to reuse the selected Instagram photographs on a public website; obtain any additional approved work photographs and permissions needed for patient imagery.
 - Domain ownership and whether `kozaklab.pl` should be restored.
 
 ## Local verification
