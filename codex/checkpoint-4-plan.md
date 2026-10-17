@@ -4,5 +4,5 @@ Goal: provide ten portable, font-led calligraphic K studies for Kozak Lab's squa
 
 1. Select ten open-license script and italic display fonts, include their source files and license text, and convert actual K glyph outlines into SVG marks using the site's ivory and graphite palette.
 2. Present them together in a browser board at full mark and favicon sizes, with numbered names and individual SVG links.
-3. Keep source generation dependency free so the designs can be revised after selection.
+3. Keep the generated SVGs self-contained; document the fontTools dependency needed to regenerate them after selection.
 4. Verify SVG validity, local asset and board loading, responsive layout, and no changes to production logo files. Request independent review before pushing.
