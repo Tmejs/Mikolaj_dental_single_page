@@ -157,7 +157,7 @@ def main() -> None:
 <body>
   <header><div class="shell"><a class="brand" href="../index.html">KOZAK LAB</a><a href="../index.html">← Back to website</a></div></header>
   <main class="shell">
-    <div class="intro"><span class="eyebrow">MONOGRAM EXPLORATION / 01</span><div><h1>Ten ways to write <em>K.</em></h1><p>Ten calligraphic directions for the square Kozak Lab mark. The large view shows the character of each stroke; the small square tests whether it survives in a header or favicon. These are comparisons only—the current site logo stays as it is until one is chosen.</p></div></div>
+    <div class="intro"><span class="eyebrow">MONOGRAM EXPLORATION / 01</span><div><h1>Ten ways to write <em>K.</em></h1><p>Ten calligraphic directions for the square Kozak Lab mark. The large view shows the character of each stroke; the small square tests whether it survives in a header or favicon. These are comparisons only—the current site logo stays as it is until one is chosen.</p><p><a href="monogram-sheet.svg">View all ten on one SVG sheet ↗</a></p></div></div>
     <div class="grid">'''+cards+'''</div>
     <p class="note">Every option is a self-contained SVG drawn for this study, with no external font or image dependency. Pick a number to refine; colour, frame weight, and stroke can still change.</p>
   </main>
@@ -165,6 +165,28 @@ def main() -> None:
 </html>
 '''
     (target.parent / "monogram-options.html").write_text(board, encoding="utf-8")
+
+    sheet_items = []
+    for index, (number, name, _, artwork) in enumerate(STUDIES):
+        col, row = index % 5, index // 5
+        x, y = 33 + col * 236, 105 + row * 268
+        sheet_items.append(
+            f'<g transform="translate({x} {y})">'
+            f'<rect width="220" height="242" fill="{PAPER}" stroke="#d8d2c8"/>'
+            f'<g transform="translate(10 6)"><rect width="200" height="200" fill="{PAPER}"/>{artwork}</g>'
+            f'<text x="17" y="224" fill="{INK}" font-size="15" font-family="Georgia,serif">{number}  {escape(name)}</text>'
+            '</g>'
+        )
+    sheet = (
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1210 680" role="img" '
+        'aria-label="Ten calligraphic square K monogram concepts for Kozak Lab">'
+        '<title>Ten K monogram concepts — Kozak Lab</title>'
+        f'<rect width="1210" height="680" fill="{PAPER}"/>'
+        f'<text x="33" y="47" fill="{INK}" font-family="Helvetica,Arial,sans-serif" font-weight="700" font-size="18" letter-spacing="3">KOZAK LAB</text>'
+        f'<text x="33" y="78" fill="{COPPER}" font-family="Helvetica,Arial,sans-serif" font-weight="700" font-size="12" letter-spacing="2">TEN K MONOGRAM STUDIES</text>'
+        + ''.join(sheet_items) + '</svg>\n'
+    )
+    (target.parent / "monogram-sheet.svg").write_text(sheet, encoding="utf-8")
 
 
 if __name__ == "__main__":
