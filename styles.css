@@ -65,6 +65,7 @@ h1 { max-width: 850px; margin-bottom: 29px; font-size: clamp(64px, 7.25vw, 118px
 .intro-copy h2, .section-heading-row h2, .work-copy h2, .contact-main h2 { font-size: clamp(43px, 4.15vw, 69px); line-height: 1.11; }
 h2 em { font-weight: 400; color: var(--accent); }
 .intro-copy h2 { margin-bottom: 28px; }
+.intro-copy h2 em { display: block; }
 .intro-copy p { max-width: 650px; color: var(--muted); font-size: 17px; line-height: 1.85; margin-bottom: 0; }
 .intro-aside { display: flex; flex-direction: column; gap: 12px; padding-top: 13px; color: #777b74; font-size: 10px; font-weight: 700; letter-spacing: .18em; }
 .intro-aside .rule { width: 75px; height: 1px; margin-bottom: 14px; background: var(--accent); }
@@ -132,10 +133,11 @@ h2 em { font-weight: 400; color: var(--accent); }
 
 @media (max-width: 740px) {
   .shell { width: min(100% - 40px, 1380px); }
-  .header-inner { min-height: 71px; gap: 10px; }
+  .header-inner { min-height: 71px; gap: 10px; flex-wrap: wrap; padding-top: 16px; }
   .brand-mark { width: 35px; height: 35px; font-size: 27px; }
   .brand-name { font-size: 14px; }
-  .main-nav { display: none; }
+  .main-nav { display: flex; order: 3; width: 100%; justify-content: space-between; gap: 12px; margin-left: 0; padding-block: 14px; border-top: 1px solid var(--line); }
+  .main-nav a { font-size: 11px; }
   .header-contact { margin-left: auto; padding-left: 15px; gap: 8px; font-size: 11px; }
   .header-contact span { font-size: 16px; }
   .hero { min-height: 725px; align-items: flex-start; }
@@ -152,7 +154,7 @@ h2 em { font-weight: 400; color: var(--accent); }
   .intro-grid, .section-heading-row, .work-layout, .contact-inner { display: block; }
   .section-label { margin-bottom: 28px; padding-top: 0; }
   .intro-copy h2, .section-heading-row h2, .work-copy h2, .contact-main h2 { font-size: clamp(42px, 9vw, 59px); }
-  .intro-copy h2 br { display: none; }
+  .intro-copy h2 em { display: inline; }
   .intro-copy p, .work-copy > p:not(.work-source) { font-size: 15px; line-height: 1.75; }
   .principles-section { padding-block: 80px; }
   .section-heading-row { padding-bottom: 37px; }
