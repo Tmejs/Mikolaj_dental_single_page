@@ -103,7 +103,7 @@ h2 em { font-weight: 400; color: var(--accent); }
 .work-card img { display: block; width: 100%; height: auto; }
 .work-card-caption { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 88px; padding: 18px 23px; background: var(--paper); }
 .work-card-caption > span:first-child { display: flex; flex-direction: column; gap: 5px; }
-.work-card-caption small { color: #7c8079; font-size: 10px; font-weight: 700; letter-spacing: .12em; }
+.work-card-caption small { color: #646962; font-size: 10px; font-weight: 700; letter-spacing: .12em; }
 .work-card-caption strong { color: var(--ink); font-family: var(--serif); font-size: 24px; font-weight: 400; letter-spacing: -.035em; }
 .work-card-arrow { align-self: center; color: var(--ink); font-size: 22px; transition: transform .2s; }
 .work-card:hover .work-card-arrow { transform: translate(3px,-3px); }

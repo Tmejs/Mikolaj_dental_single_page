@@ -24,7 +24,7 @@ Give a dentist or clinic a quick, credible introduction to Mikołaj Kozak's dent
 - Exact product and service list, materials, and any specialties.
 - Preferred contact method and business email or phone, if desired.
 - Service area and practical ordering process.
-- Confirm permission to reuse the selected Instagram photographs on a public website; obtain any additional approved work photographs and permissions needed for patient imagery.
+- The three selected photographs from Mikołaj's public Instagram posts were added at the user's request and link to their source posts. Obtain approval for any additional photographs and consent before using patient imagery.
 - Domain ownership and whether `kozaklab.pl` should be restored.
 
 ## Local verification
